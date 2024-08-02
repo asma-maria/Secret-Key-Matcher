@@ -1,0 +1,273 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display: flex;
+    column-gap: 3px;
+    border-radius: 10px;
+    min-height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.box-1
+{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.box-2
+{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.displayKey
+{
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: #666;
+    padding: 16px 32px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 2px;
+
+
+}
+
+.GenerateBtn
+{
+    color: rgb(255, 255, 255);
+    background-color: #007BFF;
+    border-radius: 8px;
+    padding: 20px 32px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 4px 2px;
+    
+}
+
+.left-side
+{
+    display: flex;
+    min-height: 90vh; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.inputText
+{
+    color: white;
+    font-size: 26px;
+    font-weight: 60px;
+    
+   
+
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px;
+    width: 100%;
+
+
+}
+
+.keypad-btn {
+    font-size: 24px;
+    padding: 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.keypad-btn:active {
+    background-color: #666;
+}
+
+.entryLabel
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 30px;
+
+}
+
+.pinDisplay
+{
+    display: flex;
+    
+   
+    align-items: center;
+}
+.displayPin
+{
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: #666;
+    padding: 16px 32px;
+    text-align: center;
+    width: 230px;
+    font-size: 35px;
+    margin-left: 120px;
+
+}
+
+/* for small device*/
+@media screen and (max-width: 576px) {
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    border-radius: 10px;
+    min-height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.box-1
+{
+    height: 500px;
+    width: 576px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.box-2
+{
+    height: 500px;
+    width: 576px;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    width: 100%;
+
+
+}
+
+
+.displayPin
+{
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: #666;
+    padding: 16px 32px;
+    text-align: center;
+    width: 100px;
+    font-size: 10px;
+    margin: 4px 2px;
+
+}
+
+.inputText
+{
+    color: white;
+    font-size: 12px;
+    font-weight: 16px;
+
+   
+
+}
+
+.keypad-btn {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.GenerateBtn
+{
+    color: rgb(255, 255, 255);
+    background-color: #007BFF;
+    border-radius: 8px;
+    padding: 14px 25px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 4px 2px;
+    
+}
+
+.displayKey
+{
+    
+   
+    
+    padding: 16px 32px;
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    font-size: 15px;
+   
+
+
+}
+
+.pinDisplay
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+}
+    
+}

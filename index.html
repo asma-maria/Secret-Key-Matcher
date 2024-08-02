@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Key Matcher </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box-1">
+            <div class="left-side">
+                <button class="GenerateBtn" id="generateKeyBtn"> Generate Secret Key</button>
+                <div class="displayKey" id="displayKey">******</div>
+               
+            </div>
+
+        </div>
+    
+        <div class="box-2">
+            <div class="right-side">
+                <div class="entryLabel">
+                    <div class="pinDisplay">
+                        <label class="inputText"  for="pinInput "> Enter PIN : </label>
+                   
+                        <input class="displayPin" type="text" name="" id="pinInput" readonly>
+
+                    </div>
+                    
+                </div>
+
+                <div class="keypad">
+                    <button class="keypad-btn">1</button>
+                    <button class="keypad-btn">2</button>
+                    <button class="keypad-btn">3</button>
+                    <button class="keypad-btn">4</button>
+                    <button class="keypad-btn">5</button>
+                    <button class="keypad-btn">6</button>
+                    <button class="keypad-btn">7</button>
+                    <button class="keypad-btn">8</button>
+                    <button class="keypad-btn">9</button>
+                    <button class="keypad-btn">0</button>
+                    <button class="keypad-btn" id="clearlastdigit" style="background-color: #F0AD4E">x</button>
+                    <button class="keypad-btn" id="submitBtn" style="background-color:#5CB85C">Submit</button>
+                    <button class="keypad-btn" id="clearBtn" style="background-color: #D9534F;" >Clear</button>
+                
+                </div>
+                <div id="resultMessage"></div>
+            </div>
+            </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
