@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showMessage.style.fontSize='25px';
             showMessage.style.fontFamily='Times New Roman';
         } else {
-            showMessage.innerHTML = '  <img src="cross-mark-in-the-red-square-free-vector.jpg" alt="check icon" style="width: 15px; height: 15px;"> Wrong Secret Key!';
+            showMessage.innerHTML = '  <img src="cross-mark.jpg" alt="check icon" style="width: 15px; height: 15px;"> Wrong Secret Key!';
             showMessage.style.color = 'red';
             showMessage.style.fontSize='25px';
             showMessage.style.fontFamily='Times New Roman';
