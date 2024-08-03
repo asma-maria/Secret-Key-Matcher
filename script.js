@@ -16,13 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkPin() {
         if (pinInput.value === secretKey) {
-            showMessage.innerHTML = '  <img src="check_mark_Png_Editor.png" alt="check icon" style="width: 15px; height: 15px;"> Your Secret Key is matched!';
+            showMessage.innerHTML = '  <img src="correctIcon.png" alt="check icon" style="width: 15px; height: 15px;"> Your Secret Key is Matched!';
             showMessage.style.color = 'green';
             showMessage.style.fontSize='25px';
+            showMessage.style.fontFamily='Times New Roman';
         } else {
-            showMessage.innerHTML = '  <img src="cross.jpg" alt="check icon" style="width: 15px; height: 15px;">  Incorrect Key!';
+            showMessage.innerHTML = '  <img src="cross.jpg" alt="check icon" style="width: 15px; height: 15px;"> Wrong Secret Key!';
             showMessage.style.color = 'red';
             showMessage.style.fontSize='25px';
+            showMessage.style.fontFamily='Times New Roman';
         }
     }
 
