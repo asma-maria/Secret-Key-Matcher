@@ -13,7 +13,7 @@
         <div class="box-1">
             <div class="left-side">
                 <button class="GenerateBtn" id="generateKeyBtn"> Generate Secret Key</button>
-                <div class="displayKey" id="displayKey">******</div>
+                <div class="displayKey" id="secretKey">******</div>
                
             </div>
 
@@ -25,7 +25,7 @@
                     <div class="pinDisplay">
                         <label class="inputText"  for="pinInput "> Enter PIN : </label>
                    
-                        <input class="displayPin" type="text" name="" id="pinInput" readonly>
+                        <input class="displayPin" type="text" name="" id="pinInput" readonly >
 
                     </div>
                     
@@ -33,21 +33,23 @@
 
                 <div class="keypad">
                     <button class="keypad-btn">1</button>
-                    <button class="keypad-btn">2</button>
-                    <button class="keypad-btn">3</button>
-                    <button class="keypad-btn">4</button>
-                    <button class="keypad-btn">5</button>
-                    <button class="keypad-btn">6</button>
-                    <button class="keypad-btn">7</button>
-                    <button class="keypad-btn">8</button>
-                    <button class="keypad-btn">9</button>
-                    <button class="keypad-btn">0</button>
-                    <button class="keypad-btn" id="clearlastdigit" style="background-color: #F0AD4E">x</button>
-                    <button class="keypad-btn" id="submitBtn" style="background-color:#5CB85C">Submit</button>
-                    <button class="keypad-btn" id="clearBtn" style="background-color: #D9534F;" >Clear</button>
-                
+                <button class="keypad-btn">2</button>
+                <button class="keypad-btn">3</button>
+                <button class="keypad-btn">4</button>
+                <button class="keypad-btn">5</button>
+                <button class="keypad-btn">6</button>
+                <button class="keypad-btn">7</button>
+                <button class="keypad-btn">8</button>
+                <button class="keypad-btn">9</button>
+                <button class="keypad-btn">0</button>
+                <button class="keypad-btn" id="backspaceBtn" style="background-color: #F0AD4E ">X</button>
+                <button class="keypad-btn" id="clearBtn" style="background-color: #D9534F;" >Clear</button>
+                <button class="keypad-btn" id="submitBtn" style="background-color:#5CB85C">Submit</button>
                 </div>
-                <div id="resultMessage"></div>
+                <div id="showMessage"></div>
+                
+
+              
             </div>
             </div>
 
